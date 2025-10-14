@@ -25,6 +25,8 @@ builder.Services.AddSingleton<IMarkService, MarkService>();
 builder.Services.AddAuthorization(); // <-- This fixes the error
 
 var app = builder.Build();
+app.ConfigureExceptionHandler();
+
 
 // Configure middleware
 if (app.Environment.IsDevelopment())
