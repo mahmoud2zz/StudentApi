@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="FastEndpoints" Version="5.23.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Helpers\" />
+    <None Remove="Endpoints\" />
+    <None Remove="Endpoints\Students\" />
+    <None Remove="Endpoints\Classes\" />
+    <None Remove="Endpoints\Enrollments\" />
+    <None Remove="Endpoints\Marks\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Classe\" />
+    <None Remove="Services\Enrollment\" />
+    <None Remove="Services\Mark\" />
+    <None Remove="Services\Students\" />
+    <None Remove="Dtos\" />
+    <None Remove="Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Endpoints\" />
+    <Folder Include="Endpoints\Students\" />
+    <Folder Include="Endpoints\Classes\" />
+    <Folder Include="Endpoints\Enrollments\" />
+    <Folder Include="Endpoints\Marks\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Classe\" />
+    <Folder Include="Services\Enrollment\" />
+    <Folder Include="Services\Mark\" />
+    <Folder Include="Services\Students\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{4173B964-6DA5-41FB-AF64-3F6AE4D27E2E}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentApi/Endpoints/Students/StudentReportEndpoint.cs">
+    <Files>
+      <File FileName="StudentApi/Dtos/StudentReportDto.cs" Line="11" Column="2" />
+      <File FileName="StudentApi/Dtos/ClassMarkDto.cs" Line="10" Column="63" />
+      <File FileName="StudentApi/Endpoints/Students/StudentReportEndpoint.cs" Line="10" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StudentApi" expanded="True">
+            <Node name="StudentApi" expanded="True">
+              <Node name="Dtos" expanded="True" />
+              <Node name="Endpoints" expanded="True">
+                <Node name="Classes" expanded="True" />
+                <Node name="Enrollments" expanded="True" />
+                <Node name="Marks" expanded="True" />
+                <Node name="Students" expanded="True">
+                  <Node name="StudentReportEndpoint.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Classe" expanded="True" />
+                <Node name="Enrollment" expanded="True" />
+                <Node name="Mark" expanded="True" />
+              </Node>
+              <Node name="Validators" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.StudentApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
