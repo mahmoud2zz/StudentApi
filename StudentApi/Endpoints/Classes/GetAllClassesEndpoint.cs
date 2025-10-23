@@ -1,5 +1,4 @@
-﻿
-using FastEndpoints;
+﻿using FastEndpoints;
 using StudentApi.Dtos;
 using StudentApi.Helpers;
 using StudentApi.Services.Classe;
@@ -23,7 +22,6 @@ public class GetAllClassesEndpoint : Endpoint<GetAllClassesRequest>
     {
         var allClasses = _classService.GetAllClasses();
 
-        
         if (!string.IsNullOrWhiteSpace(req.Name))
             allClasses = allClasses
                 .Where(c => c.Name.Contains(req.Name, StringComparison.OrdinalIgnoreCase))
@@ -34,11 +32,13 @@ public class GetAllClassesEndpoint : Endpoint<GetAllClassesRequest>
                 .Where(c => c.Teacher.Contains(req.Teacher, StringComparison.OrdinalIgnoreCase))
                 .ToList();
 
-       
+        var page = req.Page <= 0 ? 1 : req.Page;
+        var pageSize = req.PageSize <= 0 ? 10 : req.PageSize;
+
         var totalCount = allClasses.Count;
         var paged = allClasses
-            .Skip((req.Page - 1) * req.PageSize)
-            .Take(req.PageSize)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
             .ToList();
 
         var response = new

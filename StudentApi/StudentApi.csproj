@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.30.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="FastEndpoints" Version="5.23.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="6.0.1" />
+    <PackageReference Include="FastEndpoints" Version="5.30.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
